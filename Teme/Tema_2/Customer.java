@@ -10,7 +10,6 @@ public class Customer {
     private int age;
 
 
-
     Customer(Adress adress, PaymentMethod pm, String last_name, String first_name, int age) {
         this.adress = adress;
         this.pm = pm;
@@ -27,7 +26,8 @@ public class Customer {
     public PaymentMethod getPaymentMethod() {
         return pm;
     }
-    public String getCompleteName(){
+
+    public String getCompleteName() {
         System.out.println(first_name + " " + last_name);
         return first_name + " " + last_name;
     }
@@ -55,6 +55,7 @@ class Adress {
 
 class PaymentMethod {
     private String type;
+
     PaymentMethod(String type) {
         this.type = type;
     }
