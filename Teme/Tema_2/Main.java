@@ -10,7 +10,7 @@ public class Main {
 
         viteza_drum_1("zona rezidentiala");
         viteza_drum_2("DrUm ExPREss");
-        viteza_drum_3("Drum express");
+        viteza_drum_3("Oras");
 
         System.out.println();
 
@@ -32,45 +32,37 @@ public class Main {
 
     private static int viteza_drum_1(String drum) {
 
-        if(drum.compareToIgnoreCase("oras") == 0) {
+        if (drum.compareToIgnoreCase("oras") == 0) {
             System.out.println("Oras: " + 50);
             return 50;
-        }
-        else{
-            if(drum.compareToIgnoreCase("zona rezidentiala") == 0) {
-                System.out.println("Zona Rezidentiala: " + 30);
-                return 30;
-            }
-            else {
-                if(drum.compareToIgnoreCase("drum express") == 0) {
-                    System.out.println("Drum Express: " + 100);
-                    return 100;
-                }
-                else{
-                    if(drum.compareToIgnoreCase("autostrada") == 0) {
-                        System.out.println("Autostrada: " + 130);
-                        return 130;
-                    }
-                }
-            }
+        } else if (drum.compareToIgnoreCase("zona rezidentiala") == 0) {
+            System.out.println("Zona Rezidentiala: " + 30);
+            return 30;
+        } else if (drum.compareToIgnoreCase("drum express") == 0) {
+            System.out.println("Drum Express: " + 100);
+            return 100;
+        } else if (drum.compareToIgnoreCase("autostrada") == 0) {
+            System.out.println("Autostrada: " + 130);
+            return 130;
+
         }
         return 0;
     }
 
     private static int viteza_drum_2(String drum) {
-        if(drum.compareToIgnoreCase("oras") == 0) {
+        if (drum.compareToIgnoreCase("oras") == 0) {
             System.out.println("Oras: " + 50);
             return 50;
         }
-        if(drum.compareToIgnoreCase("zona rezidentiala") == 0) {
+        if (drum.compareToIgnoreCase("zona rezidentiala") == 0) {
             System.out.println("Zona Rezidentiala: " + 30);
             return 50;
         }
-        if(drum.compareToIgnoreCase("drum express") == 0) {
+        if (drum.compareToIgnoreCase("drum express") == 0) {
             System.out.println("Drum Express: " + 100);
             return 50;
         }
-        if(drum.compareToIgnoreCase("autostrada") == 0) {
+        if (drum.compareToIgnoreCase("autostrada") == 0) {
             System.out.println("Autostrada: " + 130);
             return 50;
         }
@@ -78,22 +70,22 @@ public class Main {
     }
 
     private static int viteza_drum_3(String drum) {
+        drum = drum.toLowerCase();
+        switch (drum) {
 
-        switch(drum) {
-
-            case "Oras":
+            case "oras":
                 System.out.println("Oras: " + 50);
                 return 50;
 
-            case "Zona Rezidentiala":
+            case "zona rezidentiala":
                 System.out.println("Zona Rezidentiala: " + 30);
                 return 30;
 
-            case "Drum express":
+            case "drum express":
                 System.out.println("Drum Express: " + 100);
                 return 100;
 
-            case "Autostrada":
+            case "autostrada":
                 System.out.println("Autostrada: " + 130);
                 return 130;
 
